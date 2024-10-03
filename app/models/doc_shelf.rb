@@ -1,0 +1,2 @@
+class DocShelf < ApplicationRecord
+end
