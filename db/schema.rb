@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2024_10_03_192924) do
+ActiveRecord::Schema[7.2].define(version: 2024_10_04_121224) do
   create_schema "sandbox"
 
   # These are extensions that must be enabled in order to support this database
@@ -40,6 +40,7 @@ ActiveRecord::Schema[7.2].define(version: 2024_10_03_192924) do
     t.bigint "author_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "url"
     t.index ["author_id"], name: "index_documents_on_author_id"
     t.index ["doc_shelf_id"], name: "index_documents_on_doc_shelf_id"
   end
